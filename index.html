@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#080a0e" />
+    <meta name="description" content="Stage，让发现演出、选票和入场变得简单。" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Stage — 好现场，值得亲临" />
+    <meta property="og:description" content="从发现活动到持票入场，把期待留给现场。" />
+    <meta property="og:image" content="https://stage.picwe.org/assets/live-stage.jpg" />
+    <link rel="icon" type="image/png" href="/assets/favicon.png" />
+    <link rel="preload" as="image" href="/assets/live-stage.jpg" />
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/script.js" defer></script>
+    <title>Stage — 好现场，值得亲临</title>
+  </head>
+  <body>
+    <svg class="icon-sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15M13 5l7 7-7 7" /></symbol>
+      <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="M5 19 19 5M7 5h12v12" /></symbol>
+      <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.7"/><path d="m16 16 4 4" /></symbol>
+      <symbol id="i-ticket" viewBox="0 0 24 24"><path d="M4 7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3a2 2 0 0 0 0 4v3a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-3a2 2 0 0 0 0-4V7Z"/><path d="M12 7v2m0 3v1m0 3v1"/></symbol>
+      <symbol id="i-wallet" viewBox="0 0 24 24"><path d="M4 8V6a2 2 0 0 1 2-2h11M4 8h14a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8Zm16 4h-4a2 2 0 0 0 0 4h4"/><path d="M16 14h.01"/></symbol>
+      <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.5"/><path d="M5 20a7 7 0 0 1 14 0"/></symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24"><path d="M19 10c0 5-7 10-7 10S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2"/></symbol>
+      <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 7v5l3 2"/></symbol>
+      <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></symbol>
+      <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.4 1.4m11.2 11.2L19 19M19 5l-1.4 1.4M6.4 17.6 5 19"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    </svg>
+
+    <a class="skip-link" href="#main" data-i18n="skip">跳至主要内容</a>
+    <header class="site-header">
+      <div class="header-inner shell">
+        <a class="brand" href="#top" aria-label="Stage home">
+          <img src="/assets/stage-icon.png" alt="" width="38" height="38" />
+          <span>STAGE</span>
+        </a>
+        <nav class="desktop-nav" aria-label="主要导航" data-i18n-aria="navLabel">
+          <a href="#experience" data-i18n="navExperience">产品体验</a>
+          <a href="#how-it-works" data-i18n="navHow">如何使用</a>
+          <a href="#features" data-i18n="navFeatures">功能亮点</a>
+        </nav>
+        <div class="header-actions">
+          <button class="language-button" type="button" aria-label="Switch language to English" data-i18n-aria="languageAria"><span class="language-globe">◎</span><span data-i18n="language">EN</span></button>
+          <a class="header-cta" href="#experience"><span data-i18n="navCta">探索 Stage</span><svg class="icon"><use href="#i-arrow-up" /></svg></a>
+          <button class="menu-button" type="button" aria-label="打开菜单" aria-expanded="false" aria-controls="mobile-nav" data-i18n-aria="menuOpen"><span></span><span></span></button>
+        </div>
+      </div>
+      <nav class="mobile-nav" id="mobile-nav" aria-label="移动导航" data-i18n-aria="mobileNavLabel" hidden>
+        <a href="#experience" data-i18n="navExperience">产品体验</a>
+        <a href="#how-it-works" data-i18n="navHow">如何使用</a>
+        <a href="#features" data-i18n="navFeatures">功能亮点</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-image" aria-hidden="true"></div>
+        <div class="hero-shade" aria-hidden="true"></div>
+        <div class="hero-content shell">
+          <div class="eyebrow"><span class="eyebrow-dot"></span><span data-i18n="heroEyebrow">为每一个值得到场的时刻</span></div>
+          <h1 id="hero-title"><span data-i18n="heroLine1">好现场，</span><br /><span data-i18n="heroLine2">值得亲临。</span></h1>
+          <p class="hero-copy" data-i18n="heroCopy">从发现心动的演出，到拿到属于你的那张票。Stage 让每一次奔赴，都更简单。</p>
+          <div class="hero-actions">
+            <a class="button button-light" href="#experience"><span data-i18n="heroCta">认识 Stage</span><svg class="icon"><use href="#i-arrow" /></svg></a>
+            <a class="text-link" href="#how-it-works"><span data-i18n="heroSecondary">看看如何使用</span><span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero-bottom"><span>LIVE MORE. FEEL MORE.</span><span class="hero-line"></span><span>01 / 04</span></div>
+        </div>
+        <div class="hero-side" aria-hidden="true">THE MOMENT IS YOURS &nbsp; / &nbsp; STAGE</div>
+        <div class="hero-caption"><span class="caption-mark">✳</span><span data-i18n="heroCaption">为热爱，到现场。</span></div>
+      </section>
+
+      <div class="marquee" aria-hidden="true"><div class="marquee-inner"><span>GOOD NIGHTS START HERE</span><b>✳</b><span>FIND YOUR MOMENT</span><b>✳</b><span>BE THERE FOR IT</span><b>✳</b><span>GOOD NIGHTS START HERE</span><b>✳</b><span>FIND YOUR MOMENT</span></div></div>
+
+      <section class="intro section shell" id="experience">
+        <div class="section-kicker"><span>01 / THE EXPERIENCE</span><span class="section-kicker-line"></span><span data-i18n="introKicker">一切，从这里开始</span></div>
+        <div class="intro-grid">
+          <div class="intro-copy">
+            <p class="small-label" data-i18n="introLabel">YOUR TICKET TO THE MOMENT</p>
+            <h2 data-i18n="introTitle">把期待留给现场，<br />把繁琐交给 Stage。</h2>
+            <p class="section-copy" data-i18n="introBody">好演出值得被发现。浏览活动、选择场次与票种，再到电子票入场，Stage 把购票旅程收在一个简洁的地方。</p>
+            <div class="intro-rule"></div>
+            <div class="intro-note"><span class="note-star">✳</span><p data-i18n="introNote">少一点等待与寻找，<br />多一点对下一场的期待。</p></div>
+          </div>
+          <div class="phone-stage">
+            <div class="phone-orbit orbit-one"></div><div class="phone-orbit orbit-two"></div>
+            <div class="phone-label phone-label-left"><span>STAGE APP</span><b>01 — 03</b></div>
+            <div class="phone-label phone-label-right"><span data-i18n="previewTag">交互预览</span><b>✳</b></div>
+            <div class="phone" aria-label="Stage 应用交互演示" data-i18n-aria="phoneAria">
+              <div class="phone-screen">
+                <div class="phone-status"><span>9:41</span><span>● ● ▰</span></div>
+                <div class="phone-header"><div><img src="/assets/stage-icon.png" alt="" /><strong>STAGE</strong></div><span class="phone-theme"><svg class="icon"><use href="#i-sun" /></svg></span></div>
+                <div class="phone-view" data-phone-view="hall">
+                  <div class="phone-search"><svg class="icon"><use href="#i-search" /></svg><span>Search events, artists, venues</span></div>
+                  <div class="phone-list-heading"><strong>On sale now</strong><span>2 events</span></div>
+                  <div class="phone-event"><div class="event-poster poster-one"></div><div class="event-info"><strong>After the Lights</strong><span>The Midnight Edit</span><small>◷ &nbsp;Oct 24 · 8:00 PM</small><small>⌖ &nbsp;The Nova Room</small><b>From $48</b></div><svg class="icon"><use href="#i-chevron" /></svg></div>
+                  <div class="phone-event"><div class="event-poster poster-two"></div><div class="event-info"><strong>Sound in Motion</strong><span>Live Sessions</span><small>◷ &nbsp;Nov 08 · 7:30 PM</small><small>⌖ &nbsp;The Warehouse</small><b>From $38</b></div><svg class="icon"><use href="#i-chevron" /></svg></div>
+                  <p class="phone-demo">ILLUSTRATIVE EVENTS · NOT FOR SALE</p>
+                </div>
+                <div class="phone-view" data-phone-view="tickets" hidden>
+                  <div class="ticket-view-title"><strong>My Tickets</strong><span>Your next night out, all in one place.</span></div>
+                  <div class="phone-ticket"><div class="phone-ticket-top"><div class="ticket-poster"></div><div><strong>After the Lights</strong><span>Oct 24 · 8:00 PM</span><span>The Nova Room</span></div><b>Valid</b></div><div class="ticket-divider"></div><div class="ticket-details"><div><small>TICKET</small><strong>General Admission</strong></div><div><small>STATUS</small><strong>Ready</strong></div></div><div class="demo-code" aria-hidden="true"><i></i><i></i><i></i></div><p>ILLUSTRATIVE PREVIEW</p></div>
+                </div>
+                <div class="phone-tabs" aria-label="应用演示视图" data-i18n-aria="previewTabs"><button type="button" class="phone-tab is-active" data-phone-tab="hall" aria-pressed="true"><svg class="icon"><use href="#i-ticket" /></svg><span>Ticket Hall</span></button><button type="button" class="phone-tab" data-phone-tab="tickets" aria-pressed="false"><svg class="icon"><use href="#i-wallet" /></svg><span>My Tickets</span></button><div class="phone-tab phone-tab-muted"><svg class="icon"><use href="#i-user" /></svg><span>Me</span></div></div>
+                <div class="phone-homebar"></div>
+              </div>
+            </div>
+            <p class="preview-disclaimer" data-i18n="previewDisclaimer">界面与活动仅供演示</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="journey section" id="how-it-works">
+        <div class="shell">
+          <div class="section-kicker"><span>02 / HOW IT WORKS</span><span class="section-kicker-line"></span><span data-i18n="journeyKicker">三步，奔赴现场</span></div>
+          <div class="journey-heading"><div><p class="small-label" data-i18n="journeyLabel">FROM SCROLL TO SHOWTIME</p><h2 data-i18n="journeyTitle">从心动，到入场。</h2></div><p class="section-copy" data-i18n="journeyBody">一场好体验，从购票的第一步就开始。</p></div>
+          <div class="steps">
+            <article class="step"><div class="step-top"><span>01</span><svg class="icon"><use href="#i-search" /></svg></div><div class="step-art art-discover"><div class="mini-search"><svg class="icon"><use href="#i-search" /></svg><span data-i18n="searchHint">搜索活动、艺人或场馆</span></div><div class="mini-result"><div class="mini-poster"></div><div><i></i><i></i><i></i></div></div></div><h3 data-i18n="step1Title">发现下一场心动</h3><p data-i18n="step1Body">按活动、艺人或场馆搜索，时间、地点和票价一目了然。</p></article>
+            <article class="step"><div class="step-top"><span>02</span><svg class="icon"><use href="#i-ticket" /></svg></div><div class="step-art art-select"><div class="mini-option"><div><small data-i18n="session">场次</small><strong>SAT, OCT 24 · 8PM</strong></div><span>✓</span></div><div class="mini-option"><div><small data-i18n="ticketType">票种</small><strong>GENERAL ADMISSION</strong></div><span>✓</span></div></div><h3 data-i18n="step2Title">选好你的那一席</h3><p data-i18n="step2Body">查看活动详情，选择场次、票种和数量，完成支付。</p></article>
+            <article class="step"><div class="step-top"><span>03</span><svg class="icon"><use href="#i-wallet" /></svg></div><div class="step-art art-ticket"><div class="mini-ticket"><div class="mini-ticket-icon"><svg class="icon"><use href="#i-ticket" /></svg></div><div><small>YOUR TICKET</small><strong data-i18n="readyToGo">准备就绪</strong></div><span><svg class="icon"><use href="#i-check" /></svg></span></div><div class="mini-dashes"></div></div><h3 data-i18n="step3Title">带着票，奔赴现场</h3><p data-i18n="step3Body">电子票和订单集中查看；入场时间开放后，出示核销码即可。</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="features section shell" id="features">
+        <div class="section-kicker"><span>03 / THE DETAILS</span><span class="section-kicker-line"></span><span data-i18n="featuresKicker">为每一步用心</span></div>
+        <div class="features-layout"><div class="features-title"><p class="small-label" data-i18n="featuresLabel">MADE FOR LIVE MOMENTS</p><h2 data-i18n="featuresTitle">好的体验，<br />藏在细节里。</h2><div class="asterisk">✳</div></div>
+          <div class="feature-list">
+            <article><span>01</span><div><h3 data-i18n="feature1Title">活动信息，清清楚楚</h3><p data-i18n="feature1Body">活动介绍、时间地点、票价与座位图，在决定之前先了解更多。</p></div><svg class="icon"><use href="#i-arrow-up" /></svg></article>
+            <article><span>02</span><div><h3 data-i18n="feature2Title">选票与支付，一路顺畅</h3><p data-i18n="feature2Body">按场次和票种选购，并在应用内完成支付。</p></div><svg class="icon"><use href="#i-arrow-up" /></svg></article>
+            <article><span>03</span><div><h3 data-i18n="feature3Title">你的票，随时可查看</h3><p data-i18n="feature3Body">在「我的票券」中查看票券状态、活动信息与入场核销码。</p></div><svg class="icon"><use href="#i-arrow-up" /></svg></article>
+            <article><span>04</span><div><h3 data-i18n="feature4Title">喜欢哪种界面，由你决定</h3><p data-i18n="feature4Body">深色与浅色主题自由切换，白天黑夜都保持舒适。</p></div><svg class="icon"><use href="#i-arrow-up" /></svg></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="closing" aria-labelledby="closing-title"><div class="closing-image" aria-hidden="true"></div><div class="closing-overlay" aria-hidden="true"></div><div class="closing-inner shell"><div class="section-kicker"><span>04 / SEE YOU THERE</span><span class="section-kicker-line"></span><span data-i18n="closingKicker">下一场见</span></div><p class="small-label">THE NIGHT IS CALLING</p><h2 id="closing-title" data-i18n="closingTitle">那些难忘的瞬间，<br />值得亲自在场。</h2><p data-i18n="closingBody">准备好，为下一次心动留一个位置。</p><a class="button button-light" href="#top"><span data-i18n="backTop">回到顶部</span><svg class="icon"><use href="#i-arrow-up" /></svg></a><div class="closing-stamp"><span>STAGE</span><b>✳</b><span>BE THERE<br />FOR IT.</span></div></div></section>
+    </main>
+
+    <footer class="site-footer"><div class="shell"><div class="footer-main"><a class="brand" href="#top" aria-label="Stage home"><img src="/assets/stage-icon.png" alt="" width="38" height="38" /><span>STAGE</span></a><p data-i18n="footerLine">好现场，值得亲临。</p><div class="footer-links"><a href="#experience" data-i18n="navExperience">产品体验</a><a href="#how-it-works" data-i18n="navHow">如何使用</a><a href="#features" data-i18n="navFeatures">功能亮点</a><a href="https://www.picwe.org/" target="_blank" rel="noreferrer">PICWE ↗</a></div></div><div class="footer-bottom"><span>© 2026 STAGE. A PICWE PRODUCT.</span><span>MADE FOR THE MOMENTS THAT MOVE YOU.</span></div></div></footer>
+  </body>
+</html>
